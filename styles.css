@@ -1,0 +1,92 @@
+/* Style.css sss */
+
+body {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('BG1.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .flow-container {
+    width: 100%;
+    max-width: 450px; /* Keep layout responsive */
+    text-align: center; /* Center text inside the container */
+  }
+  
+  .flow-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Reduced gap for tighter layout */
+  }
+  
+  .stage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stage-item p {
+    margin: 0;
+    font-weight: bold;
+    color: #fddfe6;
+    text-align: center;
+    font-size: 20px; /* Adjusted text size to fit neatly */
+  }
+  
+  .flow-button {
+    width: 30px; /* Reduced button size */
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("buttonBG.png");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s ease;
+  }
+  
+  .flow-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 6px #00a8f3;
+  }
+  
+  .toggle-button {
+    position: absolute; /* Place at a fixed position */
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 14px; /* Slightly smaller text for the button */
+    color: #fff;
+    background-color: #00a8f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    z-index: 1000; /* Keeps the toggle button above all content */
+  }
+  
+  body.dark-mode {
+    background-image: url('bgDark.png'); /* Dark mode background */
+  }
+  
+  body.dark-mode .stage-item p {
+    color: black; /* Dark mode text color */
+  }
+  
+  body.dark-mode .flow-button {
+    background-image: url('buttonDark.png'); /* Dark mode button background */
+  }
+  
+  body.dark-mode .toggle-button {
+    background-color: black;
+    color: #00a8f3; /* Contrast color for dark mode */
+  }
+  
