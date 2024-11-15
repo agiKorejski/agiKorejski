@@ -35,7 +35,7 @@ body {
   }
   
   .stage-item p {
-    margin: 0;
+    margin: 10px;
     font-weight: bold;
     color: #fddfe6;
     text-align: center;
@@ -55,7 +55,7 @@ body {
   
   .flow-button:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 15px 6px #00a8f3;
+    box-shadow: 0 0 15px 6px #fddfe6;
   }
   
   .toggle-button {
