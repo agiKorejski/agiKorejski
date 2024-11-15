@@ -1,0 +1,93 @@
+/* Style.css */
+
+body {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    min-height: 150vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('BG1.png'); /* Default background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: background 0.3s ease; /* Smooth transition for mode change */
+  }
+  
+  .flow-container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center; /* Center text inside the container */
+  }
+  
+  .flow-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Spacing between each stage */
+  }
+  
+  .stage-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .stage-item p {
+    margin: 0;
+    font-weight: bold;
+    color: #fddfe6; /* Original light pink text color */
+    text-align: center;
+    font-size: 25px; /* Original text size */
+  }
+  
+  .flow-button {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    background-image: url("buttonBG.png");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s ease; /* Smooth transitions */
+  }
+  
+  .flow-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 18px 7px #fddfe6; /* Glowing effect on hover */
+  }
+  
+  .toggle-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #fddfe6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    z-index: 1000; /* Ensures button is on top */
+  }
+  
+  body.dark-mode {
+    background-image: url('bgDark.png'); /* Dark mode background image */
+  }
+  
+  body.dark-mode .stage-item p {
+    color: black; /* Dark mode text color */
+  }
+  
+  body.dark-mode .flow-button {
+    background-image: url('buttonDark.png'); /* Dark mode button background */
+  }
+  
+  body.dark-mode .toggle-button {
+    background-color: black;
+    color: #fddfe6; /* Contrast color for dark mode */
+  }
+  
